@@ -1,0 +1,70 @@
+.docs {
+	margin: 4em auto;
+}
+
+.docs__block {
+	margin-bottom: 4em;
+	img {
+		display: block;
+		margin: 0em auto;
+		margin-top: 2em;
+	}
+}
+
+.docs__h1--uppercase {
+	text-transform: uppercase;
+	line-height: 1.5em;
+	font-size: 1.7em;
+}
+
+#docs__fixednav {
+	position: fixed;
+	top: 100px; 
+	width: 300px;
+}
+
+.docs__smallsidenavcontainer {
+	margin-bottom: 6em;
+}
+
+.docs__p {
+	font-weight: 300;
+	line-height: 1.85rem;
+}
+
+.docs__caption {
+	font-style: italic;
+	font-size: 0.8rem;
+	margin-bottom: 4em;
+	margin-top: 1em;
+}
+
+.docsnav li {
+	border-bottom: 1px solid #f2f2f2;
+	margin-bottom: 0;
+	background-color: #fff;
+}
+
+.docsnav li:hover {
+	background-color: $yellow;
+	color: #fff;
+	// font-weight: bold;
+}
+
+.docsnav__a--active {
+	border-bottom: 1px solid $yellow;
+}
+
+.docsnav__h3 a {
+	color: #000;
+}
+
+.top-bar {
+	.active {
+		border-bottom: 1px solid $yellow;
+	}
+}
+
+.top-bar:hover {
+
+}
