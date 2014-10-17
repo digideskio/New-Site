@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,6 +8,16 @@
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../stylesheets/app.css" />
     <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43894425-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
   <body>
     
@@ -16,7 +27,7 @@
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
     <li class="name">
-      <h1><a href="../index.html"><img src="../img/logo.png" width="30px" alt="OSBH Logo" style="margin-right: 0.75em;">Open Source Beehives</a></h1>
+      <h1><a href="../index.html"><img src="../img/logo.png" width="30px" alt="" style="margin-right: 0.75em;">Open Source Beehives</a></h1>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -26,9 +37,14 @@
     <!-- Right Nav Section -->
     <ul class="right">
       <li><a href="about.html" class="active">About</a></li>
-      <li><a href="08.html">Contact</a></li>
-      <li><a href="../Sensors/sensors.html">Sensors</a></li>
-      <li><a href="../Data/data.html">Data</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="#">Media</a>
+        <ul class="dropdown">
+          <li><a href="https://vimeo.com/opensourcebeehives/videos" target="_blank">Videos</a></li>
+          <li><a href="https://www.flickr.com/photos/126873197@N05" target="_blank">Photos</a></li>
+        </ul>
+      </li>
       <li class="has-dropdown">
         <a href="../Beehives/CTB/ctb.html">Beehives</a>
         <ul class="dropdown">
@@ -37,11 +53,11 @@
         </ul>
       </li>
       <li class="has-dropdown">
-        <a href="../Collaborate/collaborate.html">Collaborate</a>
+        <a href="../Collaborate/get_involved.html">Get Involved</a>
         <ul class="dropdown">
-          <li><a href="../Collaborate/collaborate.html">Get Involved</a></li>
+          <li><a href="../Collaborate/get_involved.html">Collaborate</a></li>
           <li><a href="http://community.opensourcebeehives.net">Forum</a></li>
-          <li><a href="../donate.html">Donate</a></li>
+          <li><a href="../index.html#Donate">Donate</a></li>
         </ul>
       </li>
     </ul>
@@ -58,15 +74,12 @@
   <div class="small-12 medium-4 columns show-for-small-only docs__smallsidenavcontainer">
     <ul class="side-nav docsnav">
     <h3 class="docsnav__h3"><a href="about.html">About</a></h3>
-    <h6>Open Source Beehives</h6>
-      <li><a href="about.html" class="docsnav__a--active">1. Overview</a></li>
-      <li><a href="02.html">2. Project Plan</a></li>
-      <li><a href="03.html">3. Citizen Science Protocols</a></li>
-      <li><a href="04.html">4. Colony Collapse Disorder (CCD)</a></li>
-      <li><a href="05.html">5. Team</a></li>
-      <li><a href="06.html">6. Partners</a></li>
-      <li><a href="07.html">7. FAQ</a></li>
-      <li><a href="08.html">8. Contact</a></li>
+      <li><a href="about.html" class="docsnav__a--active">Overview</a></li>
+      <li><a href="bee_decline.html">Bee Decline</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="press_kit.html">Press Kit</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </div>
 <!-- END SIDENAV FOR SMALL VIEWPORTS -->
@@ -74,37 +87,48 @@
   <div class="small-12 medium-4 columns show-for-medium-up" id="docs__fixednav">
     <ul class="side-nav docsnav">
     <h3 class="docsnav__h3"><a href="about.html">About</a></h3>
-    <h6>Open Source Beehives</h6>
-      <li><a href="about.html" class="docsnav__a--active">1. Overview</a></li>
-      <li><a href="02.html">2. Project Plan</a></li>
-      <li><a href="03.html">3. Citizen Science Protocols</a></li>
-      <li><a href="04.html">4. Colony Collapse Disorder (CCD)</a></li>
-      <li><a href="05.html">5. Team</a></li>
-      <li><a href="06.html">6. Partners</a></li>
-      <li><a href="07.html">7. FAQ</a></li>
-      <li><a href="08.html">8. Contact</a></li>
+      <li><a href="about.html" class="docsnav__a--active">Overview</a></li>
+      <li><a href="bee_decline.html">Bee Decline</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="press_kit.html">Press Kit</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </div>
   <!-- END SIDENAV FOR MEDIUM AND LARGER VIEWPORTS -->
 <!-- END DOCS__SIDENAV -->
 <!-- DOCS__BODY -->
   <div class="small-12 medium-8 columns">
-    <div class="docs__block">
-      <h1 class="docs__h1--uppercase">1. Overview</h1>
-      <hr>
-      <div class="flex-video widescreen vimeo">
-        <iframe src="https://player.vimeo.com/video/88638297" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div class="docs__block">
+      <h2>Introduction</h2>
+      <p class="docs__p">The Open Source Beehives project is a network of citizen scientists tracking bee decline. We use sensor enhanced beehives and data science to study honeybee colonies throughout the world. All of our technology and methods, from the hive and sensor kit designs to the data, are documented and made openly available for anyone to use. Feel free to get involved by joining the discussions on <a href="http://community.opensourcebeehives.net">our forum</a> or by <a href="contact.html">contacting us</a>.</p>
       </div>
-      <p class="docs__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <h2>Here We Go</h2>
-      <h3>Assembly</h3>
-      <p class="docs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, sequi, magnam ad earum soluta distinctio tempore consequatur saepe veritatis voluptas nesciunt harum eius dolore ab assumenda iste aut tenetur aliquam fuga officiis labore animi ipsa excepturi itaque veniam modi neque a. Vero, consequatur, nulla, ullam, aliquid facere eum ratione laboriosam ad numquam sed quos deserunt esse nostrum expedita doloremque voluptatum quidem asperiores unde dicta et officiis est corrupti voluptatem debitis incidunt. Aspernatur, aperiam atque praesentium corporis voluptas cum dicta ad ratione error totam esse porro aliquid vero perspiciatis laudantium ea non soluta delectus nesciunt tempora fuga incidunt expedita quae sit facere repellendus unde tenetur harum eos nemo. Vitae, laudantium, molestias, possimus culpa autem ab officia impedit delectus voluptatem temporibus doloribus.</p>
-      <h3>Use Cases</h3>
-      <p class="docs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, sunt repellat est consequatur laboriosam illo aperiam. Repellendus, perferendis, reprehenderit et recusandae non maxime facilis sit tempore aliquid dolorem ad nostrum quod. Molestiae, quasi, ut, iste provident ullam minus voluptatibus fugiat sequi vel debitis nemo aut optio fugit nulla quia est quidem sint magni dolorum voluptatum omnis rem nobis libero facilis maxime mollitia nostrum ipsa sit ducimus quae obcaecati blanditiis beatae repellendus dolores a ea tempora. Quod, doloribus sapiente recusandae ducimus esse quis laudantium ex in nisi quos quaerat beatae debitis incidunt dolorem quia praesentium iure! Blanditiis, vero, neque officia soluta illo dicta similique quidem vitae voluptatibus dolorem nemo magnam cupiditate nihil quos odio perspiciatis veritatis voluptate doloribus provident ex. Inventore!</p>
+      <div class="docs__block flex-video widescreen vimeo">
+      <iframe src="https://player.vimeo.com/video/79178831" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <h2>Overview</h2>
+       <div class="docs__block flex-video widescreen vimeo">
+      <iframe src="http://prezi.com/embed/bsx7k7qdxrmm/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
+      </div>
+      <div class="docs__block">
+      <h2>Project Plan</h2>
+      <div class="flex-video widescreen">
+        <iframe src="https://docs.google.com/presentation/d/1jiwz_Nidqmz7Yu4ffehmKFK1EuLrM2T2v9JM0kTpojA/embed?start=false&loop=true&delayms=6000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+     </div>
+     <div class="docs__block">
+    <div class="docs__block">
+      <h2>Stage 1: The Hives</h2>
+      <p>The Open Source Beehives project has developed two open source beehive designs; the Colorado Top Bar and the Barcelona Warré. Either hive can be freely downloaded, installed to a CNC router machine, and cut from a standard 4x8 sheet of material, such as plywood. The fabricated pieces are flat-packable and slot together without the need for screws or glues.</p>
+      <p>Both hives have been designed around natural beekeeping methods to lower stress factors on the colony, minimise exposure to artificial materials, and allow the bees more control over their living environment.</p>
+      <p>Our designs use an open source licence (CC-BY-SA) so anyone can download, improve, and change them to fit their particular needs. The only rule is that you share these new designs under the same open licence so anyone can use and improve them.</p>
+      <p>You can download a hive and build one yourself, or buy one from us. All monies received go towards supporting the Open Source Beehives project.</p>
     </div>
     <div class="docs__block">
-      <h2>More Information</h2>
-      <p class="docs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, impedit, alias, accusamus dolorem natus illo aliquam maiores tenetur cumque ducimus voluptatibus molestias atque deserunt laudantium est dolorum obcaecati culpa! Unde, enim, aliquid natus architecto culpa vitae ipsam assumenda hic! Commodi, quam, nemo, omnis dolor nisi enim ipsum velit placeat earum amet saepe incidunt laudantium maiores. Natus, quod, earum, corporis ipsum voluptates dolore necessitatibus libero deleniti in voluptatibus culpa aspernatur perferendis sequi laudantium rem. Ipsam, esse itaque incidunt maiores nostrum nobis iusto doloremque illum iure optio soluta unde deserunt repellendus dolores eum laboriosam temporibus libero minus placeat perferendis consequatur beatae consectetur at ratione neque rem doloribus quisquam possimus rerum ducimus. Id, odit, veritatis dolorum numquam harum labore natus nihil quisquam impedit.</p>
+      <h2>Stage 2: The Sensors & Data</h2>
+      <p>The Open Source Beehives project is developing a sensor kit that will allow users to monitor bee colony information and upload the data to the an online repository called the Smart Citizen platform. All generated data will be viewable and downloadable by anyone.</p>
+      <p>Accurately monitoring a super organism such as a bee colony is complicated, so we are releasing versions of our sensor kit on an iterative basis. Our first Alpha Kit is being developed with audio, temperature, infrared, and humidity sensors. Later versions will include VOC sensors to monitor for foreign chemicals, scales to monitor honey production, and web cameras to give visual information about the colony.</p>
+      <p>Our sensors are being developed by a distributed team of collaborators. If you have skills in electronics or programing and are interested in helping develop our sensor kit, please contact <a href="mailto:sensor@opensourcebeehives.net">sensors@opensourcbeehives.net</a>.</p>
     </div>
   </div>
 </section>
@@ -121,7 +145,7 @@
         <ul class="footer__social-list text-center">
           <li><a href="https://twitter.com/OSbeehives"><i class="fi-social-twitter"></i></a></li>
           <li><a href="https://www.facebook.com/opensourcebeehives"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="https://vimeo.com/opentechcollaborative"><i class="fi-social-vimeo"></i></a></li>
+          <li><a href="http://vimeo.com/opensourcebeehives"><i class="fi-social-vimeo"></i></a></li>
           <li><a href="https://github.com/opensourcebeehives"><i class="fi-social-github"></i></a></li>
           <li><a href="mailto:hello@opensourcebeehives.net"><i class="fi-mail"></i></a></li>
         </ul>

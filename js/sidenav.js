@@ -4,7 +4,7 @@ $(window).scroll(function () {
 // distance from top of footer to top of document
 footertotop = ($('footer').position().top);
 // distance user has scrolled from top, adjusted to take in height of sidebar (570 pixels inc. padding)
-scrolltop = $(document).scrollTop()+550;
+scrolltop = $(document).scrollTop()+650;
 // difference between the two
 difference = scrolltop-footertotop;
 

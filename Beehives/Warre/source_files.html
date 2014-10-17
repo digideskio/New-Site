@@ -7,6 +7,16 @@
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <link rel="stylesheet" href="../../stylesheets/app.css" />
     <script src="../../bower_components/modernizr/modernizr.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43894425-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
   <body>
     
@@ -26,9 +36,14 @@
     <!-- Right Nav Section -->
     <ul class="right">
       <li><a href="../../About/about.html">About</a></li>
-      <li><a href="../../About/08.html">Contact</a></li>
-      <li><a href="../../Sensors/sensors.html">Sensors</a></li>
-      <li><a href="../../Data/data.html">Data</a></li>
+      <li><a href="../../About/contact.html">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="#">Media</a>
+        <ul class="dropdown">
+          <li><a href="https://vimeo.com/opensourcebeehives/videos" target="_blank">Videos</a></li>
+          <li><a href="https://www.flickr.com/photos/126873197@N05" target="_blank">Photos</a></li>
+        </ul>
+      </li>
       <li class="has-dropdown">
         <a href="#" class="active">Beehives</a>
         <ul class="dropdown">
@@ -37,11 +52,11 @@
         </ul>
       </li>
       <li class="has-dropdown">
-        <a href="../../Collaborate/collaborate.html">Collaborate</a>
+        <a href="../../Collaborate/get_involved.html">Collaborate</a>
         <ul class="dropdown">
-          <li><a href="../../Collaborate/collaborate.html">Get Involved</a></li>
+          <li><a href="../../Collaborate/get_involved.html">Get Involved</a></li>
           <li><a href="http://community.opensourcebeehives.net">Forum</a></li>
-          <li><a href="../../donate.html">Donate</a></li>
+          <li><a href="../../index.html#Donate">Donate</a></li>
         </ul>
       </li>
     </ul>
@@ -57,7 +72,7 @@
 <!-- SIDENAV FOR SMALL VIEWPORTS -->
   <div class="small-12 medium-4 columns show-for-small-only docs__smallsidenavcontainer">
     <ul class="side-nav docsnav">
-      <h3 class="docsnav__h3"><a href="ctb.html">Barcelona Warre</a></h3>
+      <h3 class="docsnav__h3"><a href="warre.html">Barcelona Warre</a></h3>
       <h6>v 2.4</h6>
         <li><a href="warre.html">1. Overview</a></li>
         <li><a href="source_files.html" class="docsnav__a--active">2. Source Files</a></li>
@@ -65,12 +80,14 @@
         <li><a href="assembly.html">4. Assembly</a></li>
         <li><a href="license.html">5. License</a></li>
       </ul>
+      <A HREF="#" ONCLICK="Checkout.loadButton('ECG8UJ3V3W8FFW7BZXQTP455','')"><button style="margin-top: 3em;" class="alert round small"><i class="fi-shopping-cart" style="margin-right: 1em; font-size: 1.2em;"></i> Buy One</button></a>
+      <a href="http://community.opensourcebeehives.net/t/beehive-design-review-barcelona-warre-v2-4/16"  target="_blank"><button class="round small"><i class="fi-comments" style="margin-right: 1em; font-size: 1.2em;"></i>Feedback</button></a>
     </div>
 <!-- END SIDENAV FOR SMALL VIEWPORTS -->
 <!-- SIDENAV FOR MEDIUM AND LARGER VIEWPORTS -->
   <div class="small-12 medium-4 columns show-for-medium-up" id="docs__fixednav">
     <ul class="side-nav docsnav">
-    <h3 class="docsnav__h3"><a href="ctb.html">Barcelona Warre</a></h3>
+    <h3 class="docsnav__h3"><a href="warre.html">Barcelona Warre</a></h3>
     <h6>v 2.4</h6>
       <li><a href="warre.html">1. Overview</a></li>
       <li><a href="source_files.html" class="docsnav__a--active">2. Source Files</a></li>
@@ -78,23 +95,199 @@
       <li><a href="assembly.html">4. Assembly</a></li>
       <li><a href="license.html">5. License</a></li>
     </ul>
+    <A HREF="#" ONCLICK="Checkout.loadButton('ECG8UJ3V3W8FFW7BZXQTP455','')"><button style="margin-top: 3em;" class="alert round small"><i class="fi-shopping-cart" style="margin-right: 1em; font-size: 1.2em;"></i> Buy One</button></a>
+      <a href="http://community.opensourcebeehives.net/t/beehive-design-review-barcelona-warre-v2-4/16"  target="_blank"><button class="round small"><i class="fi-comments" style="margin-right: 1em; font-size: 1.2em;"></i>Feedback</button></a>
   </div>
 <!-- END SIDENAV FOR MEDIUM AND LARGER VIEWPORTS -->
 <!-- END DOCS__SIDENAV -->
 <!-- DOCS__BODY -->
   <div class="small-12 medium-8 columns">
-    <div class="docs__block">
-      <h1 class="docs__h1--uppercase">1. Overview</h1>
+    <div class="docs__block clearfix">
+      <h2>2. Source Files</h2>
       <hr>
-      <h2>Here We Go</h2>
-      <h3>Assembly</h3>
-      <p class="docs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, sequi, magnam ad earum soluta distinctio tempore consequatur saepe veritatis voluptas nesciunt harum eius dolore ab assumenda iste aut tenetur aliquam fuga officiis labore animi ipsa excepturi itaque veniam modi neque a. Vero, consequatur, nulla, ullam, aliquid facere eum ratione laboriosam ad numquam sed quos deserunt esse nostrum expedita doloremque voluptatum quidem asperiores unde dicta et officiis est corrupti voluptatem debitis incidunt. Aspernatur, aperiam atque praesentium corporis voluptas cum dicta ad ratione error totam esse porro aliquid vero perspiciatis laudantium ea non soluta delectus nesciunt tempora fuga incidunt expedita quae sit facere repellendus unde tenetur harum eos nemo. Vitae, laudantium, molestias, possimus culpa autem ab officia impedit delectus voluptatem temporibus doloribus.</p>
-      <h3>Use Cases</h3>
-      <p class="docs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, sunt repellat est consequatur laboriosam illo aperiam. Repellendus, perferendis, reprehenderit et recusandae non maxime facilis sit tempore aliquid dolorem ad nostrum quod. Molestiae, quasi, ut, iste provident ullam minus voluptatibus fugiat sequi vel debitis nemo aut optio fugit nulla quia est quidem sint magni dolorum voluptatum omnis rem nobis libero facilis maxime mollitia nostrum ipsa sit ducimus quae obcaecati blanditiis beatae repellendus dolores a ea tempora. Quod, doloribus sapiente recusandae ducimus esse quis laudantium ex in nisi quos quaerat beatae debitis incidunt dolorem quia praesentium iure! Blanditiis, vero, neque officia soluta illo dicta similique quidem vitae voluptatibus dolorem nemo magnam cupiditate nihil quos odio perspiciatis veritatis voluptate doloribus provident ex. Inventore!</p>
     </div>
-    <div class="docs__block">
-      <h2>More Information</h2>
-      <p class="docs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, impedit, alias, accusamus dolorem natus illo aliquam maiores tenetur cumque ducimus voluptatibus molestias atque deserunt laudantium est dolorum obcaecati culpa! Unde, enim, aliquid natus architecto culpa vitae ipsam assumenda hic! Commodi, quam, nemo, omnis dolor nisi enim ipsum velit placeat earum amet saepe incidunt laudantium maiores. Natus, quod, earum, corporis ipsum voluptates dolore necessitatibus libero deleniti in voluptatibus culpa aspernatur perferendis sequi laudantium rem. Ipsam, esse itaque incidunt maiores nostrum nobis iusto doloremque illum iure optio soluta unde deserunt repellendus dolores eum laboriosam temporibus libero minus placeat perferendis consequatur beatae consectetur at ratione neque rem doloribus quisquam possimus rerum ducimus. Id, odit, veritatis dolorum numquam harum labore natus nihil quisquam impedit.</p>
+    <div class="docs__block flex-video widescreen vimeo">
+      <iframe width="500" height="300" src="https://sketchfab.com/models/0515ec12b30243b8bd260adfc86d4559/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+    </div>
+    <!-- 18MM FILES -->
+    <div class="docs__block clearfix">
+      <h3>Sheet Thickness - 18mm/0.708"</h3>
+      <table style="margin: 2em 0em 2em 0;">
+        <thead>
+           <tr>
+            <th width="200"><i class="fi-download"></i> File Name</th>
+            <th width="50">Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2018mm/BCN%20Warre%20-%20v2.4%20-%203D%20Model_19mm.3dm">3D Model</a></td>
+            <td>.3dm</td>
+            <td>Original 3D model made in Rhino CAD.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2018mm/BCN%20Warre%20-%20v2.4%20-%203D%20Strategies_18mm.stl">3D Strategies</a></td>
+            <td>.STL</td>
+            <td>3D information needed to cut an angle using your CAM software.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2018mm/BCN%20Warre%20-%20v2.4%20-%20Nesting_18mm.3dm">Nesting</a></td>
+            <td>.3dm</td>
+            <td>Flat layout for cut strategies and tool paths.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2019mm/BCN%20Warre%20-%20v2.4%20-%20STL_Model_19mm.stl">STL Model</a></td>
+            <td>.STL</td>
+            <td>Provides an easy way to import into web viewers. Not for modeling.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2018mm/BCN%20Warre%20-%20v2.4%20-%20Strategies_18mm.dxf">Cut Strategies</a></td>
+            <td>.DXF</td>
+            <td>Import into CAM software. The layers contain the cut strategies.</td>
+          </tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2018mm/BCN%20Warre%20-%20v2.4%20-%20Strategies_18mm.dxf">Window Cuts</a></td>
+            <td>.DXF</td>
+            <td>Contains the cutting strategies to load into your CAM software to cut the window panes.</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/archive/master.zip" class="button small right">Download Zip (53.7 MB)</a>
+    </div>
+  <!-- 19MM FILES -->
+    <div class="docs__block clearfix">
+      <h3>Sheet Thickness - 19mm/0.748"</h3>
+      <table style="margin: 2em 0em 2em 0;">
+        <thead>
+           <tr>
+            <th width="200"><i class="fi-download"></i> File Name</th>
+            <th width="50">Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/blob/master/BCN%20Warre%20-%20v2.4%20-%2019mm/BCN%20Warre%20-%20v2.4%20-%203D%20Model_19mm.3dm?raw=true">3D Model</a></td>
+            <td>.3dm</td>
+            <td>Original 3D model made in Rhino CAD.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2019mm/BCN%20Warre%20-%20v2.4%20-%203D%20Strategies_19mm.stl">3D Strategies</a></td>
+            <td>.STL</td>
+            <td>3D information needed to cut an angle using your CAM software.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/blob/master/BCN%20Warre%20-%20v2.4%20-%2019mm/BCN%20Warre%20-%20v2.4%20-%20Nesting_19mm.3dm?raw=true">Nesting</a></td>
+            <td>.3dm</td>
+            <td>Flat layout for cut strategies and tool paths.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2019mm/BCN%20Warre%20-%20v2.4%20-%20STL_Model_19mm.stl">STL Model</a></td>
+            <td>.STL</td>
+            <td>Provides an easy way to import into web viewers. Not for modeling.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2019mm/BCN%20Warre%20-%20v2.4%20-%20Strategies_19mm.dxf">Cut Strategies</a></td>
+            <td>.DXF</td>
+            <td>Import into CAM software. The layers contain the cut strategies.</td>
+          </tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2019mm/BCN%20Warre%20-%20v2.4%20-%20Window%20Cuts_19mm.dxf">Window Cuts</a></td>
+            <td>.DXF</td>
+            <td>Contains the cutting strategies to load into your CAM software to cut the window panes.</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/archive/master.zip" class="button small right">Download Zip (53.7 MB)</a>
+    </div>
+    <!-- 20MM FILES -->
+    <div class="docs__block clearfix">
+      <h3>Sheet Thickness - 20mm/0.787"</h3>
+      <table style="margin: 2em 0em 2em 0;">
+        <thead>
+           <tr>
+            <th width="200"><i class="fi-download"></i> File Name</th>
+            <th width="50">Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2020mm/BCN%20Warre%20-%20v2.4%20-%203D%20Model_20mm.3dm">3D Model</a></td>
+            <td>.3dm</td>
+            <td>Original 3D model made in Rhino CAD.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2020mm/BCN%20Warre%20-%20v2.4%20-%203D%20Strategies_20mm.stl">3D Strategies</a></td>
+            <td>.STL</td>
+            <td>3D information needed to cut an angle using your CAM software.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2020mm/BCN%20Warre%20-%20v2.4%20-%20Nesting_20mm.3dm">Nesting</a></td>
+            <td>.3dm</td>
+            <td>Flat layout for cut strategies and tool paths.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2020mm/BCN%20Warre%20-%20v2.4%20-%20STL_Model_20mm.stl">STL Model</a></td>
+            <td>.STL</td>
+            <td>Provides an easy way to import into web viewers. Not for modeling.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2020mm/BCN%20Warre%20-%20v2.4%20-%20Strategies_20mm.dxf">Cut Strategies</a></td>
+            <td>.DXF</td>
+            <td>Import into CAM software. The layers contain the cut strategies.</td>
+          </tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2020mm/BCN%20Warre%20-%20v2.4%20-%20Window%20Cuts_20mm.dxf">Window Cuts</a></td>
+            <td>.DXF</td>
+            <td>Contains the cutting strategies to load into your CAM software to cut the window panes.</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/archive/master.zip" class="button small right">Download Zip (53.7 MB)</a>
+    </div>
+    <!-- 21MM FILES -->
+    <div class="docs__block clearfix">
+      <h3>Sheet Thickness - 21mm/0.826"</h3>
+      <table style="margin: 2em 0em 2em 0;">
+        <thead>
+           <tr>
+            <th width="200"><i class="fi-download"></i> File Name</th>
+            <th width="50">Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2021mm/BCN%20Warre%20-%20v2.4%20-%203D%20Model_21mm.3dm">3D Model</a></td>
+            <td>.3dm</td>
+            <td>Original 3D model made in Rhino CAD.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2021mm/BCN%20Warre%20-%20v2.4%20-%203D%20Strategies_21mm.stl">3D Strategies</a></td>
+            <td>.STL</td>
+            <td>3D information needed to cut an angle using your CAM software.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2021mm/BCN%20Warre%20-%20v2.4%20-%20Nesting_21mm.3dm">Nesting</a></td>
+            <td>.3dm</td>
+            <td>Flat layout for cut strategies and tool paths.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2021mm/BCN%20Warre%20-%20v2.4%20-%20STL_Model_21mm.stl">STL Model</a></td>
+            <td>.STL</td>
+            <td>Provides an easy way to import into web viewers. Not for modeling.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2021mm/BCN%20Warre%20-%20v2.4%20-%20Strategies_21mm.dxf">Cut Strategies</a></td>
+            <td>.DXF</td>
+            <td>Import into CAM software. The layers contain the cut strategies.</td>
+          </tr>
+            <td><a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/raw/master/BCN%20Warre%20-%20v2.4%20-%2021mm/BCN%20Warre%20-%20v2.4%20-%20Window%20Cuts_21mm.dxf">Window Cuts</a></td>
+            <td>.DXF</td>
+            <td>Contains the cutting strategies to load into your CAM software to cut the window panes.</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="https://github.com/opensourcebeehives/Barcelona_Warre_Hive/archive/master.zip" class="button small right">Download Zip (53.7 MB)</a>
     </div>
   </div>
 </section>
@@ -111,7 +304,7 @@
         <ul class="footer__social-list text-center">
           <li><a href="https://twitter.com/OSbeehives"><i class="fi-social-twitter"></i></a></li>
           <li><a href="https://www.facebook.com/opensourcebeehives"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="https://vimeo.com/opentechcollaborative"><i class="fi-social-vimeo"></i></a></li>
+          <li><a href="http://vimeo.com/opensourcebeehives"><i class="fi-social-vimeo"></i></a></li>
           <li><a href="https://github.com/opensourcebeehives"><i class="fi-social-github"></i></a></li>
           <li><a href="mailto:hello@opensourcebeehives.net"><i class="fi-mail"></i></a></li>
         </ul>
@@ -140,5 +333,6 @@
     <script src="../../bower_components/foundation/js/foundation.min.js"></script>
     <script src="../../js/app.js"></script>
     <script src="../../js/sidenav.js"></script>
+    <SCRIPT SRC="https://s3.amazonaws.com/snappycheckout/Button.js"></SCRIPT>
   </body>
 </html>

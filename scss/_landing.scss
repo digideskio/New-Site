@@ -1,0 +1,231 @@
+.landing-small {
+	background: url(../img/smallLanding01web.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 400px;
+	text-align: center;
+	padding-top: 4em;
+	h2 {
+		color:#fff;
+		font-weight: 700;
+	}
+}
+
+.landing-small-donate {
+	background: url(../img/minihive01smallweb.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	padding-top: 8em;
+	h2 {
+		color:#fff;
+		font-weight: 700;
+		font-size: 2em;
+	}
+	h3 {
+		color:#fff;
+		font-weight: 300;
+		font-size: 1.8em;
+	}
+}
+
+.landing-small-ctb {
+	border-top: 2px solid #fff;
+	background: url(../img/CTB02web.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	padding-top: 8em;
+	h2 {
+		color:#fff;
+		font-weight: 700;
+		font-size: 2em;
+	}
+	h3 {
+		color:#fff;
+		font-weight: 300;
+		font-size: 1.8em;
+	}
+}
+
+.landing-small-warre {
+	border-top: 2px solid #fff;
+	background: url(../img/warre02web.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	padding-top: 8em;
+	h2 {
+		color:#fff;
+		font-weight: 700;
+		font-size: 2em;
+	}
+	h3 {
+		color:#fff;
+		font-weight: 300;
+		font-size: 1.8em;
+	}
+}
+
+.landing {
+	background: url(../img/Landing02web.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	min-height: 700px;
+	text-align: center;
+	h3 {
+		color: #fff;
+		font-weight: 300;
+		margin-top: -0.5em;
+		margin-bottom: 2em;
+		font-style: italic;
+	}
+	p {
+		color: #fff;
+		font-size: 1.3em;
+	}
+}
+
+
+
+.landing__text {
+	font-weight: 700;
+	color: #fff;
+	font-size:3em;
+}
+
+.button__box {
+	margin-top: 2em;
+}
+
+.sensors {
+	background: url(../img/sensors01Web.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+}
+
+.minihive {
+	background: url(../img/minihive01web.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom: 4px solid #fff;
+	height: 100vh;
+	min-height: 700px;
+	p {
+		color: #fff;
+		font-size: 1.3em;
+	}
+}
+
+.CTB {
+	background: url(../img/CTB01web.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom: 4px solid #fff;
+	height: 100vh;
+	min-height: 700px;
+}
+
+.Warre {
+	background: url(../img/warre01web.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom: 4px solid #fff;
+	height: 100vh;
+	min-height: 700px;
+}
+
+.landing__section {
+	padding: 4em 0;
+	h2 {
+		color: #fff;
+		margin-bottom: -0.75em;
+		font-weight: 700;
+		font-family: "Ubuntu", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+		font-size: 3em;
+	}
+	h3 {
+		color: #fff;
+		// margin-bottom: 1em;
+		font-weight: 300;
+		letter-spacing: 0.05em;
+		font-size: 2.5em;
+	}
+}
+
+.button__box {
+	margin-top: 2em;
+}
+
+.funky-button {
+	background: rgba(105,105,105,0.65);
+	font-weight: bold;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	color: #fff;
+	a {
+		color: $yellow;
+	}
+}
+
+.funky-button-blue {
+	background: rgba(102,255,102,0.65);
+	font-weight: bold;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	color: #fff;
+	a {
+		color: $yellow;
+	}
+}
+
+.funky-button:hover {
+	background: rgba(249, 212, 35, 0.9)
+}
+
+.funky-button-blue:hover {
+	background: rgba(249, 212, 35, 0.9)
+}
+
+#newsletter {
+	background-color: #F5BB0F;
+}
+
+.social-links {
+	a {
+	margin-top: 0.75em;
+	color: #fff;
+	font-size: 1.5em;
+	transition: color 0.25s ease;
+	}
+	a:hover {
+		color: #EB5E07;
+	}
+	li {
+		margin-right: 0.7em;
+	}
+}
+
+.signup {
+	margin: 1em;
+}

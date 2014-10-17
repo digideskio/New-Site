@@ -1,5 +1,10 @@
 .docs {
-	margin: 4em auto;
+	padding-top: 4em;
+	padding-bottom: 20em;
+	padding-left: auto;
+	padding-right: auto;
+	// bg pattern
+	
 }
 
 .docs__block {
@@ -17,6 +22,28 @@
 	font-size: 1.7em;
 }
 
+.docs__biowrapper {
+	// margin-bottom: 4em;
+	// padding-bottom: 8em;
+}
+
+.docs__bio {
+	// background-color: #fafafa;
+	// border: 1px solid #ededed;
+	h4 {
+		margin-bottom: 0.2em;
+		margin-top: 1em;
+	}
+	.subheader {
+		margin-bottom: 1.5em;
+		margin-top: 0.25em;
+	}
+}
+
+.docs__bioparagraph {
+	font-size: 0.80em;
+}
+
 #docs__fixednav {
 	position: fixed;
 	top: 100px; 
@@ -28,8 +55,9 @@
 }
 
 .docs__p {
-	font-weight: 300;
+	font-weight: 300 italic;
 	line-height: 1.85rem;
+	margin-top: 2em;
 }
 
 .docs__caption {
@@ -67,4 +95,11 @@
 
 .top-bar:hover {
 
+}
+
+.docs__contact {
+	margin-bottom: 4em;
+	a {
+		color: $yellow;
+	}
 }

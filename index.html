@@ -6,9 +6,20 @@
     <title>Open Source Beehives</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/animate.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43894425-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
-  <body>
+<body>
     
 <!-- TOP BAR -->
 <div class="sticky">
@@ -26,9 +37,14 @@
     <!-- Right Nav Section -->
     <ul class="right">
       <li><a href="About/about.html">About</a></li>
-      <li><a href="About/08.html">Contact</a></li>
-      <li><a href="Sensors/sensors.html">Sensors</a></li>
-      <li><a href="Data/data.html">Data</a></li>
+      <li><a href="About/contact.html">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="#">Media</a>
+        <ul class="dropdown">
+          <li><a href="https://vimeo.com/opensourcebeehives" target="_blank">Videos</a></li>
+          <li><a href="https://www.flickr.com/photos/126873197@N05" target="_blank">Photos</a></li>
+        </ul>
+      </li>
       <li class="has-dropdown">
         <a href="Beehives/CTB/ctb.html">Beehives</a>
         <ul class="dropdown">
@@ -37,13 +53,14 @@
         </ul>
       </li>
       <li class="has-dropdown">
-        <a href="Collaborate/collaborate.html">Collaborate</a>
+        <a href="Collaborate/get_involved.html">Get Involved</a>
         <ul class="dropdown">
-          <li><a href="Collaborate/collaborate.html">Get Involved</a></li>
+          <li><a href="Collaborate/get_involved.html">Collaborate</a></li>
           <li><a href="http://community.opensourcebeehives.net">Forum</a></li>
-          <li><a href="donate.html">Donate</a></li>
+          <li><a href="index.html#Donate">Donate</a></li>
         </ul>
       </li>
+      <li><a href="index.html#shop">Shop</a></li>
     </ul>
   </section>
 </nav>
@@ -51,6 +68,141 @@
 </div>
 <!-- END TOP BAR -->
 
+<!-- LANDING SECTION -->
+<section class="landing hide-for-small-only">
+  <div class="row" >
+    <img src="img/logo.png" alt="" width="150" style="padding-top: 3em;">
+    <h2 class="landing__text text-center">Citizen Scientists Tracking Bee Decline</h2>
+    <h3>With Sensor Enhanced Beehives</h3>
+    <a href="About/about.html"><button class="funky-button" style="margin-right: 2em;">Learn More</button></a>
+    <a href="Collaborate/get_involved.html"><button class="funky-button">Get Involved</button></a>
+  </div>
+</section>
+<section class="landing-small show-for-small-only">
+<img src="img/logo.png" alt="" width="75" style="padding-top: 3em;">
+  <h2>Open Source Beehives</h2>
+  <a href="About/about.html"><button class="funky-button tiny" style="margin-right: 2em;">Learn More</button></a><a href="Collaborate/get_involved.html"><button class="funky-button tiny">Get Involved</button></a>
+</section>
+
+<!-- END LANDING SECTION -->
+
+<!-- BEGINNING NEWSLETTER SECTION -->
+<div id="newsletter" class="clearfix ">
+  <div class="row">
+    <div class="medium-4 columns hide-for-small-only">
+      <ul class="inline-list social-links">
+        <li><a href="https://twitter.com/OSbeehives"><i class="fi-social-twitter"></i></a></li>
+        <li><a href="https://www.facebook.com/opensourcebeehives"><i class="fi-social-facebook"></i></a></li>
+        <li><a href="http://vimeo.com/opensourcebeehives"><i class="fi-social-vimeo"></i></a></li>
+        <li><a href="https://github.com/opensourcebeehives"><i class="fi-social-github"></i></a></li>
+        <li><a href="mailto:hello@opensourcebeehives.net"><i class="fi-mail"></i></a></li>
+      </ul>
+    </div>
+    <div class="medium-4 columns hide-for-small-only">
+      <h5 style="margin-top: 1.0em; color: #fff;" class="right">Get the Latest News</h5>
+    </div>
+    <div class="medium-4 columns show-for-small-only">
+      <h5 style="margin-top: 1.0em; color: #fff;" class="left">Get the Latest News</h5>
+    </div>
+    <div class="medium-4 columns hide-for-small-only">
+      <div class="row collapse" style="margin-top: 1em;">
+        <div class="small-10 columns">
+          <form action="https://opensourcebeehives.us7.list-manage.com/subscribe/post?u=295deb81534dfcfc2d3483505&amp;id=dc4cfedb24" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      	<input type="email" value="" name="EMAIL" placeholder="your@email.com" required>
+        </div>
+        <div class="small-2 columns">
+          <input type="submit" value="Go" name="subscribe" class="button postfix"style="background-color: #EB5E07; font-weight: bold;">
+        </div>
+      </div>
+    </div>
+    <div class="medium-4 columns show-for-small-only">
+      <div class="row collapse" style="margin-top: 1em;">
+        <div class="small-10 columns">
+          <form action="https://opensourcebeehives.us7.list-manage.com/subscribe/post?u=295deb81534dfcfc2d3483505&amp;id=dc4cfedb24" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate></form>
+          <input type="email" value="" name="EMAIL" placeholder="your@email.com" required>
+        </div>
+        <div class="small-2 columns">
+          <input type="submit" value="Go" name="subscribe" class="button postfix"style="background-color: #EB5E07; font-weight: bold;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END NEWSLETTER SECTION -->
+
+
+
+<!-- BEGINNING CTB SECTION -->
+<section class="CTB landing__section hide-for-small-only" id="shop">
+  <div class="row">
+    <div class="medium-6 columns medium-offset-6">
+      <h2>THE COLORADO</h2>
+      <h3>TOP BAR BEEHIVE</h3>
+      <iframe width="500" height="300" src="https://sketchfab.com/models/1443f6181cfe435ca3d7f186b57872c8/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""  class="hide-for-small-only"></iframe>
+      <div class="button__box">
+        <a href="Beehives/CTB/ctb.html"><button class="funky-button" style="margin-right: 1em;">Learn More</button></a>
+        <A HREF="#" ONCLICK="Checkout.loadButton('SRCJLCXL9IQ6MOGB840MP452','')"><button class="funky-button-blue">Buy One</button></A>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="landing-small-ctb show-for-small-only">
+  <div class="row" style="padding-left: 1em;">
+  <h2>The Colorado</h2>
+  <h3>Top Bar Beehive</h3>
+  <a href="Beehives/CTB/ctb.html"><button class="funky-button tiny" style="margin-right: 1em;">Learn More</button></a>
+  <A HREF="#" ONCLICK="Checkout.loadButton('SRCJLCXL9IQ6MOGB840MP452','')"><button class="funky-button-blue tiny">Buy One</button></A>
+  </div>
+</section>
+<!-- END CTB SECTION -->
+
+<!-- BEGINNING WARRE SECTION -->
+<section class="Warre landing__section hide-for-small-only">
+  <div class="row">
+    <div class="medium-6 columns">
+      <h2>THE BARCELONA</h2>
+      <h3>WARRE BEEHIVE</h3>
+      <iframe width="500" height="300" src="https://sketchfab.com/models/0515ec12b30243b8bd260adfc86d4559/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""  class="hide-for-small-only"></iframe>
+      <div class="button__box">
+        <a href="Beehives/Warre/warre.html"><button class="funky-button" style="margin-right: 1em;">Learn More</button></a>
+        <A HREF="#" ONCLICK="Checkout.loadButton('ECG8UJ3V3W8FFW7BZXQTP455','')"><button class="funky-button-blue" data-celery="540e6dad776b8f070052e92a" data-celery-version="v2">Buy One</button></A>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="landing-small-warre show-for-small-only">
+  <div class="row" style="padding-left: 1em;">
+  <h2>The Barcelona</h2>
+  <h3>Warre Beehive</h3>
+  <a href="Beehives/Warre/warre.html"><button class="funky-button tiny" style="margin-right: 1em;">Learn More</button></a>
+  <A HREF="#" ONCLICK="Checkout.loadButton('ECG8UJ3V3W8FFW7BZXQTP455','')"><button class="funky-button-blue tiny">Buy One</button></A>
+  </div>
+</section>
+<!-- END WARRE SECTION -->
+
+<!-- BEGINNING DONATE SECTION -->
+<section class="minihive landing__section hide-for-small" id="Donate">
+  <div class="row">
+    <div class="medium-6 columns medium-offset-6">
+      <h2>Support the Project</h2>
+      <h3>Order a Mini Hive</h3>
+      <p>Your support will fund the development of open source behive sensor kits and public data as we expand our network of research pilot projects.</p>
+      <div class="button__box">
+        <A HREF="#" ONCLICK="Checkout.loadButton('XXUFNWMCWHNU8MFB9E5KP457','')"><button class="funky-button" style="margin-right: 1em;">Order One</button></a>
+        <A HREF="#" ONCLICK="Checkout.loadButton('94W2N3H5AYZ2CKQYNDWDP456','')"><button class="funky-button">Donate</button></A>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="landing-small-donate show-for-small-only">
+  <div class="row" style="padding-left: 1em;">
+  <h2>Support the Project</h2>
+  <h3>Buy a Mini Hive</h3>
+  <A HREF="#" ONCLICK="Checkout.loadButton('XXUFNWMCWHNU8MFB9E5KP457','')"><button class="funky-button tiny" style="margin-right: 1em; margin-top: 3em;">Order One</button></a>
+  <A HREF="#" ONCLICK="Checkout.loadButton('94W2N3H5AYZ2CKQYNDWDP456','')"><button class="funky-button tiny" margin-top: 3em;>Donate</button></A>
+  </div>
+</section>
+<!-- END DONATE SECTION -->
 
 <!-- FOOTER -->
 <footer>
@@ -63,7 +215,7 @@
         <ul class="footer__social-list text-center">
           <li><a href="https://twitter.com/OSbeehives"><i class="fi-social-twitter"></i></a></li>
           <li><a href="https://www.facebook.com/opensourcebeehives"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="https://vimeo.com/opentechcollaborative"><i class="fi-social-vimeo"></i></a></li>
+          <li><a href="http://vimeo.com/opensourcebeehives"><i class="fi-social-vimeo"></i></a></li>
           <li><a href="https://github.com/opensourcebeehives"><i class="fi-social-github"></i></a></li>
           <li><a href="mailto:hello@opensourcebeehives.net"><i class="fi-mail"></i></a></li>
         </ul>
@@ -91,5 +243,10 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <SCRIPT SRC="https://s3.amazonaws.com/snappycheckout/Button.js"></SCRIPT>
+
+
+
+
   </body>
 </html>

@@ -1722,6 +1722,11 @@
   content: "\f21a";
 }
 
+/* line 5, ../scss/_meta.scss */
+.accordion-navigation {
+  border-bottom: 1px solid #f1f1f1;
+}
+
 /* line 316, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.3.3/";
@@ -3331,11 +3336,11 @@ select {
 }
 /* line 134, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation.active > a, .accordion dd.active > a {
-  background: #e8e8e8;
+  background: #f7f7f7;
 }
 /* line 135, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > a, .accordion dd > a {
-  background: #efefef;
+  background: white;
   color: #222222;
   padding: 1rem;
   display: block;
@@ -3344,7 +3349,7 @@ select {
 }
 /* line 142, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
-  background: #e3e3e3;
+  background: #f2f2f2;
 }
 /* line 145, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > .content, .accordion dd > .content {
@@ -10123,48 +10128,110 @@ footer {
   color: #f9d423;
 }
 
-/* line 1, ../scss/_docs.scss */
-.docs {
-  margin: 4em auto;
+/* line 1, ../scss/_collab.scss */
+.collab__container {
+  background-color: #fafafa;
+  border-bottom: 1px solid #d3d3d3;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
-/* line 5, ../scss/_docs.scss */
+/* line 8, ../scss/_collab.scss */
+.collab__grid {
+  border: 1px solid #e9e9e9;
+}
+/* line 11, ../scss/_collab.scss */
+.collab__grid a {
+  color: #000;
+}
+
+/* line 16, ../scss/_collab.scss */
+.collab__gridbox {
+  background-color: #fff;
+  text-align: center;
+  height: 300px;
+  padding: 2em 1em;
+}
+
+/* line 23, ../scss/_collab.scss */
+.collab__gridbox:hover {
+  cursor: hand;
+  cursor: pointer;
+  background-color: #ffffe5;
+}
+
+/* line 29, ../scss/_collab.scss */
+.collab__gridbox__header {
+  color: #f9d423;
+}
+
+/* line 33, ../scss/_collab.scss */
+.collab__icon {
+  height: 100px;
+}
+
+/* line 1, ../scss/_docs.scss */
+.docs {
+  padding-top: 4em;
+  padding-bottom: 20em;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+/* line 10, ../scss/_docs.scss */
 .docs__block {
   margin-bottom: 4em;
 }
-/* line 7, ../scss/_docs.scss */
+/* line 12, ../scss/_docs.scss */
 .docs__block img {
   display: block;
   margin: 0em auto;
   margin-top: 2em;
 }
 
-/* line 14, ../scss/_docs.scss */
+/* line 19, ../scss/_docs.scss */
 .docs__h1--uppercase {
   text-transform: uppercase;
   line-height: 1.5em;
   font-size: 1.7em;
 }
 
-/* line 20, ../scss/_docs.scss */
+/* line 33, ../scss/_docs.scss */
+.docs__bio h4 {
+  margin-bottom: 0.2em;
+  margin-top: 1em;
+}
+/* line 37, ../scss/_docs.scss */
+.docs__bio .subheader {
+  margin-bottom: 1.5em;
+  margin-top: 0.25em;
+}
+
+/* line 43, ../scss/_docs.scss */
+.docs__bioparagraph {
+  font-size: 0.80em;
+}
+
+/* line 47, ../scss/_docs.scss */
 #docs__fixednav {
   position: fixed;
   top: 100px;
   width: 300px;
 }
 
-/* line 26, ../scss/_docs.scss */
+/* line 53, ../scss/_docs.scss */
 .docs__smallsidenavcontainer {
   margin-bottom: 6em;
 }
 
-/* line 30, ../scss/_docs.scss */
+/* line 57, ../scss/_docs.scss */
 .docs__p {
-  font-weight: 300;
+  font-weight: 300 italic;
   line-height: 1.85rem;
+  margin-top: 2em;
 }
 
-/* line 35, ../scss/_docs.scss */
+/* line 63, ../scss/_docs.scss */
 .docs__caption {
   font-style: italic;
   font-size: 0.8rem;
@@ -10172,30 +10239,302 @@ footer {
   margin-top: 1em;
 }
 
-/* line 42, ../scss/_docs.scss */
+/* line 70, ../scss/_docs.scss */
 .docsnav li {
   border-bottom: 1px solid #f2f2f2;
   margin-bottom: 0;
   background-color: #fff;
 }
 
-/* line 48, ../scss/_docs.scss */
+/* line 76, ../scss/_docs.scss */
 .docsnav li:hover {
   background-color: #f9d423;
   color: #fff;
 }
 
-/* line 54, ../scss/_docs.scss */
+/* line 82, ../scss/_docs.scss */
 .docsnav__a--active {
   border-bottom: 1px solid #f9d423;
 }
 
-/* line 58, ../scss/_docs.scss */
+/* line 86, ../scss/_docs.scss */
 .docsnav__h3 a {
   color: #000;
 }
 
-/* line 63, ../scss/_docs.scss */
+/* line 91, ../scss/_docs.scss */
 .top-bar .active {
   border-bottom: 1px solid #f9d423;
+}
+
+/* line 100, ../scss/_docs.scss */
+.docs__contact {
+  margin-bottom: 4em;
+}
+/* line 102, ../scss/_docs.scss */
+.docs__contact a {
+  color: #f9d423;
+}
+
+/* line 1, ../scss/_landing.scss */
+.landing-small {
+  background: url(../img/smallLanding01web.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  padding-top: 4em;
+}
+/* line 10, ../scss/_landing.scss */
+.landing-small h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* line 16, ../scss/_landing.scss */
+.landing-small-donate {
+  background: url(../img/minihive01smallweb.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+  padding-top: 8em;
+}
+/* line 24, ../scss/_landing.scss */
+.landing-small-donate h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+}
+/* line 29, ../scss/_landing.scss */
+.landing-small-donate h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+/* line 36, ../scss/_landing.scss */
+.landing-small-ctb {
+  border-top: 2px solid #fff;
+  background: url(../img/CTB02web.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+  padding-top: 8em;
+}
+/* line 45, ../scss/_landing.scss */
+.landing-small-ctb h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+}
+/* line 50, ../scss/_landing.scss */
+.landing-small-ctb h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+/* line 57, ../scss/_landing.scss */
+.landing-small-warre {
+  border-top: 2px solid #fff;
+  background: url(../img/warre02web.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+  padding-top: 8em;
+}
+/* line 66, ../scss/_landing.scss */
+.landing-small-warre h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+}
+/* line 71, ../scss/_landing.scss */
+.landing-small-warre h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+/* line 78, ../scss/_landing.scss */
+.landing {
+  background: url(../img/Landing02web.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  min-height: 700px;
+  text-align: center;
+}
+/* line 87, ../scss/_landing.scss */
+.landing h3 {
+  color: #fff;
+  font-weight: 300;
+  margin-top: -0.5em;
+  margin-bottom: 2em;
+  font-style: italic;
+}
+/* line 94, ../scss/_landing.scss */
+.landing p {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+/* line 102, ../scss/_landing.scss */
+.landing__text {
+  font-weight: 700;
+  color: #fff;
+  font-size: 3em;
+}
+
+/* line 108, ../scss/_landing.scss */
+.button__box {
+  margin-top: 2em;
+}
+
+/* line 112, ../scss/_landing.scss */
+.sensors {
+  background: url(../img/sensors01Web.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+/* line 121, ../scss/_landing.scss */
+.minihive {
+  background: url(../img/minihive01web.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 4px solid #fff;
+  height: 100vh;
+  min-height: 700px;
+}
+/* line 130, ../scss/_landing.scss */
+.minihive p {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+/* line 136, ../scss/_landing.scss */
+.CTB {
+  background: url(../img/CTB01web.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 4px solid #fff;
+  height: 100vh;
+  min-height: 700px;
+}
+
+/* line 147, ../scss/_landing.scss */
+.Warre {
+  background: url(../img/warre01web.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 4px solid #fff;
+  height: 100vh;
+  min-height: 700px;
+}
+
+/* line 158, ../scss/_landing.scss */
+.landing__section {
+  padding: 4em 0;
+}
+/* line 160, ../scss/_landing.scss */
+.landing__section h2 {
+  color: #fff;
+  margin-bottom: -0.75em;
+  font-weight: 700;
+  font-family: "Ubuntu", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+}
+/* line 167, ../scss/_landing.scss */
+.landing__section h3 {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  font-size: 2.5em;
+}
+
+/* line 176, ../scss/_landing.scss */
+.button__box {
+  margin-top: 2em;
+}
+
+/* line 180, ../scss/_landing.scss */
+.funky-button {
+  background: rgba(105, 105, 105, 0.65);
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* line 186, ../scss/_landing.scss */
+.funky-button a {
+  color: #f9d423;
+}
+
+/* line 191, ../scss/_landing.scss */
+.funky-button-blue {
+  background: rgba(102, 255, 102, 0.65);
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* line 197, ../scss/_landing.scss */
+.funky-button-blue a {
+  color: #f9d423;
+}
+
+/* line 202, ../scss/_landing.scss */
+.funky-button:hover {
+  background: rgba(249, 212, 35, 0.9);
+}
+
+/* line 206, ../scss/_landing.scss */
+.funky-button-blue:hover {
+  background: rgba(249, 212, 35, 0.9);
+}
+
+/* line 210, ../scss/_landing.scss */
+#newsletter {
+  background-color: #F5BB0F;
+}
+
+/* line 215, ../scss/_landing.scss */
+.social-links a {
+  margin-top: 0.75em;
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.25s ease;
+}
+/* line 221, ../scss/_landing.scss */
+.social-links a:hover {
+  color: #EB5E07;
+}
+/* line 224, ../scss/_landing.scss */
+.social-links li {
+  margin-right: 0.7em;
+}
+
+/* line 229, ../scss/_landing.scss */
+.signup {
+  margin: 1em;
 }

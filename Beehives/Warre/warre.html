@@ -7,6 +7,16 @@
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <link rel="stylesheet" href="../../stylesheets/app.css" />
     <script src="../../bower_components/modernizr/modernizr.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43894425-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
   <body>
     
@@ -26,9 +36,14 @@
     <!-- Right Nav Section -->
     <ul class="right">
       <li><a href="../../About/about.html">About</a></li>
-      <li><a href="../../About/08.html">Contact</a></li>
-      <li><a href="../../Sensors/sensors.html">Sensors</a></li>
-      <li><a href="../../Data/data.html">Data</a></li>
+      <li><a href="../../About/contact.html">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="#">Media</a>
+        <ul class="dropdown">
+          <li><a href="https://vimeo.com/opensourcebeehives/videos" target="_blank">Videos</a></li>
+          <li><a href="https://www.flickr.com/photos/126873197@N05" target="_blank">Photos</a></li>
+        </ul>
+      </li>
       <li class="has-dropdown">
         <a href="#" class="active">Beehives</a>
         <ul class="dropdown">
@@ -37,11 +52,11 @@
         </ul>
       </li>
       <li class="has-dropdown">
-        <a href="../../Collaborate/collaborate.html">Collaborate</a>
+        <a href="../../Collaborate/get_involved.html">Collaborate</a>
         <ul class="dropdown">
-          <li><a href="../../Collaborate/collaborate.html">Get Involved</a></li>
+          <li><a href="../../Collaborate/get_involved.html">Get Involved</a></li>
           <li><a href="http://community.opensourcebeehives.net">Forum</a></li>
-          <li><a href="../../donate.html">Donate</a></li>
+          <li><a href="../../index.html#Donate">Donate</a></li>
         </ul>
       </li>
     </ul>
@@ -57,7 +72,7 @@
 <!-- SIDENAV FOR SMALL VIEWPORTS -->
   <div class="small-12 medium-4 columns show-for-small-only docs__smallsidenavcontainer">
     <ul class="side-nav docsnav">
-      <h3 class="docsnav__h3"><a href="ctb.html">Barcelona Warre</a></h3>
+      <h3 class="docsnav__h3"><a href="warre.html">Barcelona Warre</a></h3>
       <h6>v 2.4</h6>
         <li><a href="warre.html" class="docsnav__a--active">1. Overview</a></li>
         <li><a href="source_files.html">2. Source Files</a></li>
@@ -65,12 +80,14 @@
         <li><a href="assembly.html">4. Assembly</a></li>
         <li><a href="license.html">5. License</a></li>
       </ul>
+      <A HREF="#" ONCLICK="Checkout.loadButton('ECG8UJ3V3W8FFW7BZXQTP455','')"><button style="margin-top: 3em;" class="alert round small"><i class="fi-shopping-cart" style="margin-right: 1em; font-size: 1.2em;"></i> Buy One</button></a>
+      <a href="http://community.opensourcebeehives.net/t/beehive-design-review-barcelona-warre-v2-4/16"  target="_blank"><button class="round small"><i class="fi-comments" style="margin-right: 1em; font-size: 1.2em;"></i>Feedback</button></a>
     </div>
 <!-- END SIDENAV FOR SMALL VIEWPORTS -->
 <!-- SIDENAV FOR MEDIUM AND LARGER VIEWPORTS -->
   <div class="small-12 medium-4 columns show-for-medium-up" id="docs__fixednav">
     <ul class="side-nav docsnav">
-    <h3 class="docsnav__h3"><a href="ctb.html">Barcelona Warre</a></h3>
+    <h3 class="docsnav__h3"><a href="warre.html">Barcelona Warre</a></h3>
     <h6>v 2.4</h6>
       <li><a href="warre.html" class="docsnav__a--active">1. Overview</a></li>
       <li><a href="source_files.html">2. Source Files</a></li>
@@ -78,24 +95,94 @@
       <li><a href="assembly.html">4. Assembly</a></li>
       <li><a href="license.html">5. License</a></li>
     </ul>
+    <A HREF="#" ONCLICK="Checkout.loadButton('ECG8UJ3V3W8FFW7BZXQTP455','')"><button style="margin-top: 3em;" class="alert round small"><i class="fi-shopping-cart" style="margin-right: 1em; font-size: 1.2em;"></i> Buy One</button></a>
+    <a href="http://community.opensourcebeehives.net/t/beehive-design-review-barcelona-warre-v2-4/16"  target="_blank"><button class="round small"><i class="fi-comments" style="margin-right: 1em; font-size: 1.2em;"></i>Feedback</button></a>
   </div>
 <!-- END SIDENAV FOR MEDIUM AND LARGER VIEWPORTS -->
 <!-- END DOCS__SIDENAV -->
 <!-- DOCS__BODY -->
   <div class="small-12 medium-8 columns">
-    <div class="docs__block">
+    <div class="docs__block" style="margin-bottom: 2em;">
       <h1 class="docs__h1--uppercase">1. Overview</h1>
       <hr>
-      <h2>Here We Go</h2>
-      <h3>Assembly</h3>
-      <p class="docs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, sequi, magnam ad earum soluta distinctio tempore consequatur saepe veritatis voluptas nesciunt harum eius dolore ab assumenda iste aut tenetur aliquam fuga officiis labore animi ipsa excepturi itaque veniam modi neque a. Vero, consequatur, nulla, ullam, aliquid facere eum ratione laboriosam ad numquam sed quos deserunt esse nostrum expedita doloremque voluptatum quidem asperiores unde dicta et officiis est corrupti voluptatem debitis incidunt. Aspernatur, aperiam atque praesentium corporis voluptas cum dicta ad ratione error totam esse porro aliquid vero perspiciatis laudantium ea non soluta delectus nesciunt tempora fuga incidunt expedita quae sit facere repellendus unde tenetur harum eos nemo. Vitae, laudantium, molestias, possimus culpa autem ab officia impedit delectus voluptatem temporibus doloribus.</p>
-      <h3>Use Cases</h3>
-      <p class="docs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, sunt repellat est consequatur laboriosam illo aperiam. Repellendus, perferendis, reprehenderit et recusandae non maxime facilis sit tempore aliquid dolorem ad nostrum quod. Molestiae, quasi, ut, iste provident ullam minus voluptatibus fugiat sequi vel debitis nemo aut optio fugit nulla quia est quidem sint magni dolorum voluptatum omnis rem nobis libero facilis maxime mollitia nostrum ipsa sit ducimus quae obcaecati blanditiis beatae repellendus dolores a ea tempora. Quod, doloribus sapiente recusandae ducimus esse quis laudantium ex in nisi quos quaerat beatae debitis incidunt dolorem quia praesentium iure! Blanditiis, vero, neque officia soluta illo dicta similique quidem vitae voluptatibus dolorem nemo magnam cupiditate nihil quos odio perspiciatis veritatis voluptate doloribus provident ex. Inventore!</p>
+      <!-- BEGINNING SLIDE SHOW -->
+      <ul class="example-orbit" data-orbit data-options="animation_speed:750; timer_speed: 2500; pause_on_hover: false; next_on_click: true;">
+        <li>
+          <img src="../../img/Warre/Medium/Warreproduct02web.jpg" alt="slide 1" />
+        </li>
+        <li>
+          <img src="../../img/Warre/Medium/Warreproduct01web.jpg" alt="slide 2" />
+        </li>
+        <li>
+          <img src="../../img/Warre/Medium/Warreproduct03web.jpg" alt="slide 3" />
+        </li>
+        <li>
+          <img src="../../img/Warre/Medium/Warreproduct04web.jpg" alt="slide 4" />
+        </li>
+      </ul>
+      <!-- END SLIDE SHOW -->
+      <h4>Hive History</h4>
+      <p class="docs__p">The Warré hive design was originally developed by the French Beekeeper Abbé Émil Warré, and published in 1948 in his book ‘Beekeeping For All’. Warré named the hive the ‘Peoples Hive’ and designed it for ease of use and for amateur Beekeepers. This modern iteration was created and tested at Valldaura Labs and Fab Lab Barcelona together with the Open Tech Collaborative in Denver Colorado. The hive is a vertical top bar type and follows a tradition of natural beekeeping methods.</p>
     </div>
     <div class="docs__block">
-      <h2>More Information</h2>
-      <p class="docs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, impedit, alias, accusamus dolorem natus illo aliquam maiores tenetur cumque ducimus voluptatibus molestias atque deserunt laudantium est dolorum obcaecati culpa! Unde, enim, aliquid natus architecto culpa vitae ipsam assumenda hic! Commodi, quam, nemo, omnis dolor nisi enim ipsum velit placeat earum amet saepe incidunt laudantium maiores. Natus, quod, earum, corporis ipsum voluptates dolore necessitatibus libero deleniti in voluptatibus culpa aspernatur perferendis sequi laudantium rem. Ipsam, esse itaque incidunt maiores nostrum nobis iusto doloremque illum iure optio soluta unde deserunt repellendus dolores eum laboriosam temporibus libero minus placeat perferendis consequatur beatae consectetur at ratione neque rem doloribus quisquam possimus rerum ducimus. Id, odit, veritatis dolorum numquam harum labore natus nihil quisquam impedit.</p>
+      <h3>Warre Manual</h3>
+      <div class="flex-video widescreen vimeo">
+      <iframe width="525" height="371" src="https://e.issuu.com/embed.html#0/7895952" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
+    <div class="docs__block">
+      <h3>Projection</h3>
+      <img src="../../img/Warre/WarreProjection01.jpg" alt="">
+      <h4>Features</h4>
+      <p class="docs__p">
+        <ul style="margin-left: 2em;">
+            <li>Open Source Hardware = open to adapt</li>
+            <li>Locking System = no screws or glues</li>
+            <li>Fits one standard wood board 1220 x 2440 mm</li>
+            <li>Reversable entrance for different seasons</li>
+            <li>Removable base tray + Varroa Draw adaption</li>
+            <li>Stacking and stable box structure.</li>
+            <li>Windows in every box.</li>
+            <li>Removable lid</li>
+            <li>Quilt Box</li>
+        </ul>      
+      </p>
+    </div>
+    <div class="docs__block">
+      <h3>Exploded View</h3>
+      <img src="../../img/Warre/WarreProjection02.jpg" alt="">
+      <h4>Components</h4>
+      <p class="docs__p">
+        <div class="medium-6 columns">
+        <ul style="list-style: none;">
+            <li>01. Top Bars <small>x24</small></li>
+            <li>02. Roof Side Panels <small>x2</small></li>
+            <li>03. Roof Beam <small>x1</small></li>
+            <li>04. Base Sides <small>x2</small></li>
+            <li>05. Roof Gabels <small>x2</small></li>
+            <li>06. Box Front <small>x3</small></li>
+            <li>07. Box Sides <small>x6</small></li>
+            <li>08. Base Back <small>x1</small></li>
+            <li>09. Base Front <small>x1</small></li>
+            <li>10. Box Back <small>x3</small></li>
+          </ul>
+        </div>
+        <div class="medium-6 columns">
+          <ul style="list-style: none;">
+            <li>11. Roof Panels <small>x2</small></li>
+            <li>12. Box Rails <small>x6</small></li>
+            <li>13. Box Shutters <small>x3</small></li>
+            <li>14. Entrance Block <small>x1</small></li>
+            <li>15. Landing Floor <small>x1</small></li>
+            <li>16. Box Locks <small>x8</small></li>
+            <li>17. Quilt Cap <small>x1</small></li>
+            <li>18. Trap Door <small>x1</small></li>
+            <li>19. Quilt Frame <small>x1</small></li>
+          </ul>
+        </div>
+      </p>
+    </div>
+    
   </div>
 </section>
 <!-- END DOCS__BODY -->
@@ -111,7 +198,7 @@
         <ul class="footer__social-list text-center">
           <li><a href="https://twitter.com/OSbeehives"><i class="fi-social-twitter"></i></a></li>
           <li><a href="https://www.facebook.com/opensourcebeehives"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="https://vimeo.com/opentechcollaborative"><i class="fi-social-vimeo"></i></a></li>
+          <li><a href="http://vimeo.com/opensourcebeehives"><i class="fi-social-vimeo"></i></a></li>
           <li><a href="https://github.com/opensourcebeehives"><i class="fi-social-github"></i></a></li>
           <li><a href="mailto:hello@opensourcebeehives.net"><i class="fi-mail"></i></a></li>
         </ul>
@@ -140,5 +227,6 @@
     <script src="../../bower_components/foundation/js/foundation.min.js"></script>
     <script src="../../js/app.js"></script>
     <script src="../../js/sidenav.js"></script>
+    <SCRIPT SRC="https://s3.amazonaws.com/snappycheckout/Button.js"></SCRIPT>
   </body>
 </html>
